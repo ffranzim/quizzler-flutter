@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart';
-
 class Question {
+  String _questionText;
+  bool _questionAnswer;
 
-  String questionText;
-  bool questionAnswer;
+  Question(this._questionText, this._questionAnswer);
 
-  Question({ @required this.questionText, @required this.questionAnswer});
+  bool get questionAnswer => _questionAnswer;
+
+  String get questionText => _questionText;
 }
